@@ -1,0 +1,60 @@
+
+body {
+    background-color: bisque;
+}
+
+table {
+    margin: auto;
+}
+
+.hoverContainer {
+    position: relative;
+    margin: auto;
+}
+
+.empImg {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.hoverEmpImg  {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hoverEmpImg:hover {
+    opacity: 1;
+    transition: .5s;
+}
+
+h1 {
+    font-family: cursive;
+    color: rgb(0, 69, 0);
+    text-align: center;
+}
+
+h2 {
+    font-family: cursive;
+    text-align: center;
+}
+
+p {
+    font-family: cursive;
+    color: darkolivegreen;
+    text-align: center;
+}
+
+h3 {
+    position: relative ;
+    bottom:0;
+    left: 0;
+}
