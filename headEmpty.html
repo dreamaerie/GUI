@@ -2,6 +2,7 @@
 File: headEmpty.html
 GUI Assignment: Creating Your First Web Page (extension)
 Derek Yong, derek_yong@student.uml.edu
+Updated on 9/25/2023
 -->
 
 <!DOCTYPE html>
@@ -13,9 +14,16 @@ Derek Yong, derek_yong@student.uml.edu
   </head>
   <body>
     <h1>Welcome to My Domain.</h1>
+    <!--
+      The gooberContainer is made to hold all the text/hover zones within the titular
+      Goober.
+    -->
     <div class="gooberContainer">
       <img src="images/yougood_trans.png" class="goober" />
-
+      <!--
+      The feelContainer is made to be the hover zone need to bring the text in
+      feelOverlay onto the screen.
+      -->
       <div class="feelContainer">
         <h1>This is me.</h1>
       </div>
@@ -23,52 +31,70 @@ Derek Yong, derek_yong@student.uml.edu
       <div class="feelOverlay">
         <h2>This is me.</h2>
         <p>
-          So you think this is a joke? That this little goober ISN'T me? Well honestly I don't know
-          what I was thinking when I drew this thing. I remember wanting a new profile picture for 
-          some SNS app, and the next thing I knew, this abomination was looking at me. Despite its
-          horrifying nature, I am actually a big fan of it. It really does capture the struggle
-          of life, the perputual act of pushing a large boulder up a hill day in and day out, only to 
-          have it roll back down right when you reach the top. And despite melting into a soupy puddle 
-          from the harsh rays of reality, this Goober has the power to give the world a thumbs up. 
-          Powerful stuff.
+          So you think this is a joke? That this little goober ISN'T me? Well
+          honestly I don't know what I was thinking when I drew this thing. I
+          remember wanting a new profile picture for some SNS app, and the next
+          thing I knew, this abomination was looking at me. Despite its
+          horrifying nature, I am actually a big fan of it. It really does
+          capture the struggle of life, the perputual act of pushing a large
+          boulder up a hill day in and day out, only to have it roll back down
+          right when you reach the top. And despite melting into a soupy puddle
+          from the harsh rays of reality, this Goober has the power to give the
+          world a thumbs up. Powerful stuff.
         </p>
-        <br>
-          <table>
-            <tr>
-              <td>Anyways. Heres a real picture of me.</td>
-              <td><img src="images/me.png"></td>
-            </tr>
-          </table>
+        <br />
+        <!--
+          A table is used here to put text and an image on the same row while remaining
+          centered.
+        -->
+        <table>
+          <tr>
+            <td>Anyways. Heres a real picture of me.</td>
+            <td><img src="images/me.png" /></td>
+          </tr>
+        </table>
       </div>
 
+      <!--
+      The likesContainer is made to be the hover zone need to bring the text in
+      likesOverlay onto the screen.
+      -->
       <div class="likesContainer"></div>
 
       <div class="likesOverlay">
         <h2>Things That I Would Give A Thumbs Up</h2>
         <p>
-          Shrimp. I'm a big fan of shrimp. Shrimp is real good. So good in fact that I think the S in super 
-          stands for shrimp. Generally does not matter how its prepared most shrimp dishes are excellent. 
-          But if I had to pick one shrimp dish to survive off of for the rest of my days, it would be 
-          coconut shrimp. Just such a delightful dish. A perfect balance of savoury and sweet, and 
-          can be complimented by any sauce of ones choosing. Simply a perfect dish in my eyes. I only 
-          pity those with shellfish allergies. 
+          Shrimp. I'm a big fan of shrimp. Shrimp is real good. So good in fact
+          that I think the S in super stands for shrimp. Generally does not
+          matter how its prepared most shrimp dishes are excellent. But if I had
+          to pick one shrimp dish to survive off of for the rest of my days, it
+          would be coconut shrimp. Just such a delightful dish. A perfect
+          balance of savoury and sweet, and can be complimented by any sauce of
+          ones choosing. Simply a perfect dish in my eyes. I only pity those
+          with shellfish allergies.
 
-          <br><br>
+          <br /><br />
 
-          I jive with good music. Typically I listen to J-rock and R&B, but I listen to a lot of 
-          different genres; It really just depends on my mood. Some days its a heavy metal day, 
-          other days its a classical music angle. My favorite musical artist would have to be Eve or 
-          Raito. Eve is a japanese singer/songwriter that makes a variety of different kinds of music,
-          with a lot of bangers that I like. 
-          Raito on the other hand specializes in music for video games, which means that his music is
-          usually high energy and very catchy. I like to listen to his music while working on projects
-          and the sort, and depending on what songs I listen to the theme of my projects end up feeling
-          like whatever I listened to at the time. 
-
+          I jive with good music. Typically I listen to J-rock and R&B, but I
+          listen to a lot of different genres; It really just depends on my
+          mood. Some days its a heavy metal day, other days its a classical
+          music angle. My favorite musical artist would have to be Eve or Raito.
+          Eve is a japanese singer/songwriter that makes a variety of different
+          kinds of music, with a lot of bangers that I like. Raito on the other
+          hand specializes in music for video games, which means that his music
+          is usually high energy and very catchy. I like to listen to his music
+          while working on projects and the sort, and depending on what songs I
+          listen to the theme of my projects end up feeling like whatever I
+          listened to at the time.
         </p>
       </div>
-        <br>
-        <h1><a href="index.html" class="returnButton">Escape back into the waves.</a></h1>
+      <br />
+      <!--Return button to the index.html page-->
+      <h1>
+        <a href="index.html" class="returnButton"
+          >Escape back into the waves.</a
+        >
+      </h1>
     </div>
   </body>
 </html>
