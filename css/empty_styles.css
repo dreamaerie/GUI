@@ -1,86 +1,124 @@
+/*
+File: empty_styles.css
+GUI Assignment: Creating Your First Web Page
+This holds the styling for the headEmpty.html page.
+Derek Yong, derek_yong@student.uml.edu
+*/
+
 body {
-   position: relative;
-   width: 100%;
-   height: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
-h2 {
-    margin-top: 10%;
-    text-align: center;   
-}
-
+/*
+  gooberContainer contains the titular Goober, along with the other
+  text and hover zones needed for the pages to appear.
+*/
 .gooberContainer {
-    margin-top: auto;
-    margin-left: auto;
-    margin-bottom: 80%;
-    width: 100%;    
-    height: 100%;
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: 80%;
+  width: 100%;
+  height: 100%;
 }
 
 .goober {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 60%;
 }
 
+/*
+  .feelOverlay is the page for when the user hovers over the "This is me." text in
+  the middle of Goober. It is hidden at the bottom of the page, having its height
+  set to 0.
+*/
 .feelOverlay {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    background-color: bisque;
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: bisque;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
 }
 
+/*
+  .feelContainer is the hover zone for the "This is me." text. If the user places
+  their mouse over this area, .feelOverlay displays.
+*/
 .feelContainer {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .feelContainer:hover + .feelOverlay {
-    height: 30%;
+  height: 35%;
 }
 
+/*
+  .likesOverlay and .likesContainer work identically to .feelOverlay and .feelContainer,
+  with some sublte differences. .likeContainer does not have text and instead uses a
+  circle shape to act as a hover zone. .likesOverlay also takes up more of the screen
+  to account for the fact that it holds more text than .feelOverlay.
+*/
 .likesOverlay {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    background-color: bisque;
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: bisque;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
 }
 
 .likesContainer {
-    position: absolute;
-    left: 20%;
-    top: 20%;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 .likesContainer:hover + .likesOverlay {
-    height: 30%;
+  height: 40%;
 }
 
-
+/*
+  h2, p and table are used for formating inside both .likesOverlay and .feelOverlay.
+*/
+h2 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
 p {
-    margin-left: 20px;
-    margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
 
-
+/*
+  Made to match the style of the text found in the "Mind Gate" page.
+*/
+.returnButton {
+  text-align: center;
+  font-family: cursive;
+  color: darkolivegreen;
+}

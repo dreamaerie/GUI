@@ -1,60 +1,83 @@
+/*
+File: index_styles.css
+GUI Assignment: Creating Your First Web Page
+This holds the styling for the index.html page.
+Derek Yong, derek_yong@student.uml.edu
+*/
+
 
 body {
-    background-color: bisque;
+  background-color: bisque;
 }
 
 table {
-    margin: auto;
+  margin: auto;
 }
 
+/*
+    .hoverContainer is made to hold the assets needed to
+    create the hover effect of having the word "Enter" appear
+    in the white circle.
+*/
 .hoverContainer {
-    position: relative;
-    margin: auto;
+  position: relative;
+  margin: auto;
 }
 
+/*
+    This is the image of the mind without anything in the circle.
+*/
 .empImg {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: auto;
-    height: auto;
-    display: block;
-    margin-left:auto;
-    margin-right: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.hoverEmpImg  {
-    position: absolute;
-    opacity: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/*
+    This is the image of the mind with the word "Enter." This is placed
+    ontop of the first image with an opacity of 0, which then fades in
+    when hovered over, creating the effect of the word "Enter" appearing.
+*/
+.hoverEmpImg {
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+/*
+    This controls the fade in.
+*/
 .hoverEmpImg:hover {
-    opacity: 1;
-    transition: .5s;
+  opacity: 1;
+  transition: 0.5s;
 }
 
 h1 {
-    font-family: cursive;
-    color: rgb(0, 69, 0);
-    text-align: center;
+  font-family: cursive;
+  color: rgb(0, 69, 0);
+  text-align: center;
 }
 
 h2 {
-    font-family: cursive;
-    text-align: center;
+  font-family: cursive;
+  text-align: center;
 }
 
 p {
-    font-family: cursive;
-    color: darkolivegreen;
-    text-align: center;
+  font-family: cursive;
+  color: darkolivegreen;
+  text-align: center;
 }
 
 h3 {
-    position: relative ;
-    bottom:0;
-    left: 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
 }
